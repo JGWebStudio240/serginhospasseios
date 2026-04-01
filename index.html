@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serginho Passeios - Passeio de Lancha em Capitólio MG | Furnas, Cânions, Lagoa Azul</title>
-    <meta name="description" content="Passeio de lancha em Capitólio MG. Conheça Lagoa Azul, Cânions de Furnas, Vale dos Tucanos, Cachoeira da Gruta. Lancha 23 pés até 12 passageiros. Agende já!">
-    <meta name="keywords" content="passeio capitólio, passeio de lancha capitólio, passeios em capitólio, passeios furnas, passeios são josé da barra, turvo, furnas aventura, cânions furnas, lagoa azul capitólio, mar de minas, passeio lancha furnas">
+    <title>Serginho Passeios - Passeio de Lancha em Capitólio MG | Furnas, Lagoa Azul, Cânions e Mais!</title>
+    <meta name="description" content="Passeio de lancha em Capitólio-MG. Conheça os mais belos pontos turísticos: Lagoa Azul, Cânions de Furnas, Vale dos Tucanos, Cascatinha, Cachoeira da Gruta, Bar Flutuante e muito mais. Lancha Ventura 23 pés, até 12 passageiros. 4 horas de pura aventura no Mar de Minas!">
+    <meta name="keywords" content="passeio capitólio, passeio de lancha capitólio, passeios em capitólio, passeios furnas, passeios são josé da barra, turvo, furnas aventura, cânions furnas, lagoa azul capitólio, mar de minas, passeio lancha furnas, cascatinha, cachoeira do sabiá, canto da ilha">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Serginho Passeios">
     <meta property="og:title" content="Serginho Passeios - Passeio de Lancha em Capitólio MG">
-    <meta property="og:description" content="Passeio de lancha em Capitólio. Lagoa Azul, Cânions, Vale dos Tucanos, Cachoeira da Gruta. Lancha exclusiva até 12 passageiros.">
+    <meta property="og:description" content="Passeio de lancha em Capitólio-MG com 4 horas. Lagoa Azul, Cânions, Vale dos Tucanos, Cascatinha, Bar Flutuante e mais. Lancha exclusiva até 12 passageiros. Agende agora!">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <link rel="canonical" href="https://serginhopasseios.com.br">
@@ -19,8 +19,8 @@
         {
           "@context": "https://schema.org",
           "@type": "TouristTrip",
-          "name": "Serginho Passeios - Passeio de Lancha",
-          "description": "Passeio de lancha em Capitólio MG com duração de 3 a 4 horas. Visite Lagoa Azul, Cânions, Vale dos Tucanos, Cachoeira da Gruta e Bar Flutuante.",
+          "name": "Serginho Passeios - Passeio de Lancha em Capitólio MG",
+          "description": "Passeio de lancha em Capitólio-MG com duração de 4 horas (acima de 4 horas a combinar). Visite Lagoa Azul, Cânions de Furnas, Vale dos Tucanos, Cascatinha, Cachoeira da Gruta, Bar Flutuante e mais. Lancha Ventura 23 pés até 12 passageiros.",
           "touristType": "Aventura, Natureza, Família",
           "provider": {
             "@type": "LocalBusiness",
@@ -154,6 +154,26 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(12,74,110,0.2);
         }
+
+        .hero-bg {
+            background: linear-gradient(rgba(8,47,73,0.75), rgba(8,47,73,0.85)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+
+        .section-title {
+            position: relative;
+        }
+
+            .section-title::after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 4px;
+                background: linear-gradient(to right, #F97316, #0EA5E9);
+                border-radius: 9999px;
+            }
     </style>
 </head>
 <body class="h-full bg-white text-gray-800">
@@ -165,7 +185,7 @@
                     <span class="text-3xl">🚤</span>
                     <div>
                         <span id="nav-title" class="text-white font-bold text-lg leading-tight block">Serginho Passeios</span>
-                        <span class="text-surf text-xs tracking-wider">CAPITÓLIO - MG</span>
+                        <span class="text-surf text-xs tracking-wider">CAPITÓLIO - MG • MAR DE MINAS</span>
                     </div>
                 </a>
                 <button id="menu-toggle" class="md:hidden text-white" aria-label="Menu">
@@ -173,279 +193,425 @@
                 </button>
                 <ul id="nav-links" class="hidden md:flex items-center gap-6 text-sm text-white/80">
                     <li><a href="#inicio" class="hover:text-surf transition">Início</a></li>
-                    <li><a href="#passeio" class="hover:text-surf transition">O Passeio</a></li>
-                    <li><a href="#pontos" class="hover:text-surf transition">Pontos</a></li>
                     <li><a href="#galeria" class="hover:text-surf transition">Galeria</a></li>
+                    <li><a href="#passeio" class="hover:text-surf transition">O Passeio</a></li>
+                    <li><a href="#pontos" class="hover:text-surf transition">Pontos Turísticos</a></li>
                     <li><a href="#contato" class="hover:text-surf transition">Contato</a></li>
                 </ul>
             </div>
             <!-- Mobile Menu -->
             <ul id="mobile-menu" class="hidden md:hidden flex-col gap-3 px-6 pb-4 text-white/80 text-sm">
                 <li><a href="#inicio" class="block py-1">Início</a></li>
-                <li><a href="#passeio" class="block py-1">O Passeio</a></li>
-                <li><a href="#pontos" class="block py-1">Pontos</a></li>
                 <li><a href="#galeria" class="block py-1">Galeria</a></li>
+                <li><a href="#passeio" class="block py-1">O Passeio</a></li>
+                <li><a href="#pontos" class="block py-1">Pontos Turísticos</a></li>
                 <li><a href="#contato" class="block py-1">Contato</a></li>
             </ul>
         </nav>
 
         <!-- HERO -->
         <header id="inicio" class="hero-bg wave-divider pt-28 pb-32 md:pt-36 md:pb-40 px-4 text-center relative">
-            <div class="relative z-10 max-w-3xl mx-auto">
+            <div class="relative z-10 max-w-4xl mx-auto">
                 <div class="animate-float text-6xl mb-6">🚤</div>
-                <h1 id="hero-title" class="font-display text-4xl md:text-6xl text-white font-800 mb-4">Serginho Passeios</h1>
-                <p id="hero-subtitle" class="text-xl md:text-2xl text-sky-200 font-300 mb-8">Passeio de Lancha em Capitólio - MG</p>
-                <p class="text-white/70 max-w-xl mx-auto mb-8">Venha conhecer as maravilhas do Mar de Minas a bordo de uma lancha confortável de 23 pés</p>
+                <h1 id="hero-title" class="font-display text-5xl md:text-7xl text-white font-800 mb-4 leading-none">Serginho Passeios</h1>
+                <p id="hero-subtitle" class="text-2xl md:text-3xl text-sky-200 font-300 mb-6">Passeio de Lancha em Capitólio-MG</p>
+                <p class="text-white/90 max-w-2xl mx-auto text-xl mb-8 font-light">Conhecendo os mais belos pontos turísticos de Capitólio no Mar de Minas. 4 horas de aventura, conforto e segurança a bordo da Lancha Ventura 23 pés!</p>
 
-                <a href="https://wa.me/5535992112594?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20passeio%20de%20lancha"
-                   target="_blank"
-                   class="inline-flex items-center gap-2 bg-coral hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-full text-lg transition shadow-lg shadow-orange-500/30">
-                    <i data-lucide="message-circle" style="width:20px;height:20px"></i>
-                    <span id="cta-text">Agende seu Passeio</span>
-                </a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://wa.me/5535992112594?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20meu%20passeio%20de%20lancha%20em%20Capit%C3%B3lio"
+                       target="_blank"
+                       class="inline-flex items-center gap-3 bg-coral hover:bg-orange-600 text-white font-semibold px-10 py-5 rounded-3xl text-xl transition shadow-xl shadow-orange-500/40">
+                        <i data-lucide="message-circle" style="width:24px;height:24px"></i>
+                        <span>Agende seu Passeio Agora</span>
+                    </a>
+                    <a href="#galeria"
+                       class="inline-flex items-center gap-3 border-2 border-white text-white font-semibold px-8 py-5 rounded-3xl text-xl hover:bg-white/10 transition">
+                        <span>Ver Galeria de Fotos</span>
+                        <i data-lucide="camera" style="width:24px;height:24px"></i>
+                    </a>
+                </div>
+
+                <div class="mt-10 flex justify-center gap-8 text-white/80 text-sm">
+                    <div class="flex items-center gap-2"><i data-lucide="clock" class="w-5 h-5"></i> <span>4 horas</span></div>
+                    <div class="flex items-center gap-2"><i data-lucide="users" class="w-5 h-5"></i> <span>Até 12 pessoas</span></div>
+                    <div class="flex items-center gap-2"><i data-lucide="shield" class="w-5 h-5"></i> <span>Segurança total</span></div>
+                </div>
             </div>
         </header>
 
-        <!-- SOBRE O PASSEIO -->
-        <section id="passeio" class="py-20 px-4">
-            <div class="max-w-5xl mx-auto">
-                <h2 class="font-display text-3xl md:text-4xl text-ocean text-center mb-4">Sobre o Passeio</h2>
-                <div class="w-16 h-1 bg-coral mx-auto mb-10 rounded-full"></div>
-                <p id="about-text" class="text-center text-gray-600 max-w-2xl mx-auto mb-12 text-lg leading-relaxed">
-                    Venha conhecer as maravilhas do Mar de Minas a bordo da Lancha confortável de 23 pés.
-                    Oferecemos conforto, qualidade e segurança.
-                </p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                    <div class="card-highlight bg-sky-50 rounded-2xl p-6 text-center">
-                        <i data-lucide="clock" class="mx-auto mb-3 text-surf" style="width:36px;height:36px"></i>
-                        <p class="font-semibold text-ocean">3 a 4 Horas</p>
-                        <p class="text-sm text-gray-500">Duração</p>
-                    </div>
-                    <div class="card-highlight bg-sky-50 rounded-2xl p-6 text-center">
-                        <i data-lucide="users" class="mx-auto mb-3 text-surf" style="width:36px;height:36px"></i>
-                        <p class="font-semibold text-ocean">Até 12</p>
-                        <p class="text-sm text-gray-500">Passageiros</p>
-                    </div>
-                    <div class="card-highlight bg-sky-50 rounded-2xl p-6 text-center">
-                        <i data-lucide="volume-2" class="mx-auto mb-3 text-surf" style="width:36px;height:36px"></i>
-                        <p class="font-semibold text-ocean">Som a Bordo</p>
-                        <p class="text-sm text-gray-500">Entretenimento</p>
-                    </div>
-                    <div class="card-highlight bg-sky-50 rounded-2xl p-6 text-center">
-                        <i data-lucide="shield" class="mx-auto mb-3 text-surf" style="width:36px;height:36px"></i>
-                        <p class="font-semibold text-ocean">Coletes</p>
-                        <p class="text-sm text-gray-500">Segurança</p>
-                    </div>
+        <!-- GALERIA - AGORA NO COMEÇO DO SITE (primeira coisa após o hero) -->
+        <section id="galeria" class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-4xl md:text-5xl text-ocean section-title inline-block">Galeria do Passeio</h2>
+                    <p class="text-gray-600 mt-4 max-w-md mx-auto">Fotos e vídeo 100% reais dos passeios. Veja com seus próprios olhos a beleza do Mar de Minas!</p>
                 </div>
-                <div class="mt-10 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-6 text-center">
-                    <p class="text-ocean font-semibold text-lg">🔥 Opções de Passeio</p>
-                    <p class="text-gray-600 mt-2"><strong>Exclusivo</strong> para seu grupo ou <strong>compartilhado</strong> com outras pessoas</p>
-                    <p class="text-gray-600 mt-1">Churrasqueira opcional (passeio privativo) · Valor a combinar</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- PONTOS DE VISITAÇÃO -->
-        <section id="pontos" class="py-20 px-4 bg-gradient-to-b from-sky-50 to-white">
-            <div class="max-w-5xl mx-auto">
-                <h2 class="font-display text-3xl md:text-4xl text-ocean text-center mb-4">Pontos de Visitação</h2>
-                <div class="w-16 h-1 bg-coral mx-auto mb-12 rounded-full"></div>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="card-highlight bg-white rounded-2xl p-6 shadow-md">
-                        <div class="text-4xl mb-3">💎</div>
-                        <h3 class="font-bold text-ocean text-lg">Lagoa Azul</h3>
-                        <p class="text-gray-500 text-sm mt-2">Águas cristalinas com tons de azul e verde esmeralda impressionantes</p>
-                    </div>
-                    <div class="card-highlight bg-white rounded-2xl p-6 shadow-md">
-                        <div class="text-4xl mb-3">🏔️</div>
-                        <h3 class="font-bold text-ocean text-lg">Cânions de Furnas</h3>
-                        <p class="text-gray-500 text-sm mt-2">Paredões rochosos imponentes com mais de 20 metros de altura</p>
-                    </div>
-                    <div class="card-highlight bg-white rounded-2xl p-6 shadow-md">
-                        <div class="text-4xl mb-3">🦜</div>
-                        <h3 class="font-bold text-ocean text-lg">Vale dos Tucanos</h3>
-                        <p class="text-gray-500 text-sm mt-2">Cenário paradisíaco com fauna e flora exuberantes</p>
-                    </div>
-                    <div class="card-highlight bg-white rounded-2xl p-6 shadow-md">
-                        <div class="text-4xl mb-3">💧</div>
-                        <h3 class="font-bold text-ocean text-lg">Cachoeira da Gruta</h3>
-                        <p class="text-gray-500 text-sm mt-2">Queda d'água escondida dentro de uma formação rochosa</p>
-                    </div>
-                    <div class="card-highlight bg-white rounded-2xl p-6 shadow-md">
-                        <div class="text-4xl mb-3">🍹</div>
-                        <h3 class="font-bold text-ocean text-lg">Bar Flutuante</h3>
-                        <p class="text-gray-500 text-sm mt-2">Pausa para petiscos e drinks no meio do lago</p>
-                    </div>
-                    <div class="card-highlight bg-white rounded-2xl p-6 shadow-md">
-                        <div class="text-4xl mb-3">🏊</div>
-                        <h3 class="font-bold text-ocean text-lg">Paradas para Banho</h3>
-                        <p class="text-gray-500 text-sm mt-2">Duas paradas em pontos especiais para mergulho</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- GALERIA (com imagens e vídeo que você pediu) -->
-        <section id="galeria" class="py-20 px-4 bg-white">
-            <div class="max-w-5xl mx-auto">
-                <h2 class="font-display text-3xl md:text-4xl text-ocean text-center mb-4">Galeria do Passeio</h2>
-                <div class="w-16 h-1 bg-coral mx-auto mb-12 rounded-full"></div>
-
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <!-- Imagem 1 -->
-                    <div class="aspect-square rounded-3xl overflow-hidden">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
                         <img src="img/lagoa-azul.jpeg"
                              alt="Lagoa Azul - Capitólio MG"
                              loading="lazy"
-                             class="w-full h-full object-cover hover:scale-105 transition-transform">
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
 
                     <!-- Imagem 2 -->
-                    <div class="aspect-square rounded-3xl overflow-hidden">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
                         <img src="img/canios.jpeg"
                              alt="Cânions de Furnas - Passeio de Lancha"
                              loading="lazy"
-                             class="w-full h-full object-cover hover:scale-105 transition-transform">
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
 
                     <!-- Imagem 3 -->
-                    <div class="aspect-square rounded-3xl overflow-hidden">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
                         <img src="img/imagem.jpg.jpeg"
                              alt="Passeio de Lancha Serginho Passeios"
                              loading="lazy"
-                             class="w-full h-full object-cover hover:scale-105 transition-transform">
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
 
                     <!-- Vídeo Vale dos Tucanos -->
-                    <div class="aspect-square rounded-3xl overflow-hidden gallery-video col-span-2 md:col-span-1">
+                    <div class="aspect-square rounded-3xl overflow-hidden gallery-video col-span-2 md:col-span-2 lg:col-span-1 relative">
                         <video controls class="w-full h-full object-cover">
                             <source src="img/vale-dos-tucanos.mp4" type="video/mp4">
                             Seu navegador não suporta o vídeo.
                         </video>
-                        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full flex items-center gap-1">
+                        <div class="absolute bottom-4 left-4 bg-black/70 text-white text-xs px-4 py-1 rounded-3xl flex items-center gap-2">
                             <span class="text-base">🎥</span>
                             Vale dos Tucanos - Vídeo real do passeio
                         </div>
                     </div>
 
-                    <!-- Imagem 4 (repetida para completar o grid bonito) -->
-                    <div class="aspect-square rounded-3xl overflow-hidden">
+                    <!-- Imagem 4 -->
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
                         <img src="img/cachoeira.jpeg"
-                             alt="Cachoeira em Capitólio"
+                             alt="Cachoeira da Gruta - Capitólio"
                              loading="lazy"
-                             class="w-full h-full object-cover hover:scale-105 transition-transform">
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
 
                     <!-- Imagem 5 -->
-                    <div class="aspect-square rounded-3xl overflow-hidden">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
                         <img src="img/cachoeira2.jpeg"
-                             alt="Cachoeira em Capitólio"
+                             alt="Cascatinha - Capitólio MG"
                              loading="lazy"
-                             class="w-full h-full object-cover hover:scale-105 transition-transform">
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
 
-                    <div class="aspect-square rounded-3xl overflow-hidden">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
+                        <img src="img/lancha.jpeg"
+                             alt="Cascatinha - Capitólio MG"
+                             loading="lazy"
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
+                        <img src="img/passeio.jpeg"
+                             alt="Cascatinha - Capitólio MG"
+                             loading="lazy"
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
+                        <img src="img/passeio3.jpeg"
+                             alt="Cascatinha - Capitólio MG"
+                             loading="lazy"
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
+                        <img src="img/passeio2.jpeg"
+                             alt="Cascatinha - Capitólio MG"
+                             loading="lazy"
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <!-- Imagem 6 -->
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
                         <img src="img/furnas-aventura.jpeg"
                              alt="Furnas Aventura - Capitólio"
                              loading="lazy"
-                             class="w-full h-full object-cover hover:scale-105 transition-transform">
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <!-- Imagem extra para deixar ainda maior -->
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
+                        <img src="img/lagoa-azul.jpeg"
+                             alt="Lagoa Azul ao pôr do sol - Capitólio"
+                             loading="lazy"
+                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
                 </div>
 
-                <p class="text-center text-xs text-gray-500 mt-8">
-                    📸 Fotos e vídeo reais dos passeios • Lancha Serginho Passeios • Capitólio MG
+                <p class="text-center text-sm text-gray-500 mt-10 flex items-center justify-center gap-2">
+                    📸 <strong>Fotos e vídeo reais</strong> • Lancha Serginho Passeios • Capitólio MG
                 </p>
+            </div>
+        </section>
+
+        <!-- SOBRE O PASSEIO - MAIS DETALHADO E MAIOR -->
+        <section id="passeio" class="py-20 px-4 bg-gradient-to-b from-sky-50 to-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-display text-4xl md:text-5xl text-ocean text-center mb-4">Sobre o Passeio</h2>
+                <div class="w-20 h-1 bg-coral mx-auto mb-12 rounded-full"></div>
+
+                <div class="prose max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-12 text-center">
+                    <p><strong>Passeio de lancha em Capitólio-MG</strong>, conhecendo os mais belos pontos turísticos de Capitólio.</p>
+                    <p>Maré mansa, passeio náutico perfeito! São <strong>4 horas</strong> de puro encanto no Lago de Furnas. Você pode fazer o passeio <strong>exclusivo</strong> só com o seu grupo ou compartilhado com outras pessoas (mais econômico). Passeios acima de 4 horas: valor a combinar.</p>
+                    <p>Saída da <strong>Pousada Marina do Farol</strong>, ou buscamos você no rancho ou pousada (valor a combinar). Lancha Ventura 23 pés para até 12 passageiros + piloto experiente. Equipada com coletes salva-vidas homologados pela Marinha, som a bordo, boias espaguete e muito conforto e segurança.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <div class="card-highlight bg-white rounded-3xl p-8 text-center shadow-lg">
+                        <i data-lucide="clock" class="mx-auto mb-4 text-surf" style="width:42px;height:42px"></i>
+                        <p class="font-semibold text-2xl text-ocean">4 horas</p>
+                        <p class="text-sm text-gray-500">Duração principal</p>
+                        <p class="text-xs text-coral mt-1">+4h a combinar</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-8 text-center shadow-lg">
+                        <i data-lucide="users" class="mx-auto mb-4 text-surf" style="width:42px;height:42px"></i>
+                        <p class="font-semibold text-2xl text-ocean">Até 12</p>
+                        <p class="text-sm text-gray-500">Passageiros</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-8 text-center shadow-lg">
+                        <i data-lucide="boat" class="mx-auto mb-4 text-surf" style="width:42px;height:42px"></i>
+                        <p class="font-semibold text-2xl text-ocean">Ventura 23 pés</p>
+                        <p class="text-sm text-gray-500">Lancha super confortável</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-8 text-center shadow-lg">
+                        <i data-lucide="volume-2" class="mx-auto mb-4 text-surf" style="width:42px;height:42px"></i>
+                        <p class="font-semibold text-2xl text-ocean">Som a bordo</p>
+                        <p class="text-sm text-gray-500">Música e diversão</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-8 text-center shadow-lg">
+                        <i data-lucide="shield" class="mx-auto mb-4 text-surf" style="width:42px;height:42px"></i>
+                        <p class="font-semibold text-2xl text-ocean">Coletes homologados</p>
+                        <p class="text-sm text-gray-500">Segurança Marinha</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-8 text-center shadow-lg">
+                        <i data-lucide="life-buoy" class="mx-auto mb-4 text-surf" style="width:42px;height:42px"></i>
+                        <p class="font-semibold text-2xl text-ocean">Boias espaguete</p>
+                        <p class="text-sm text-gray-500">Diversão na água</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-3xl p-8 text-center">
+                    <p class="text-ocean font-semibold text-2xl mb-2">🔥 Opções de Passeio</p>
+                    <p class="text-gray-700">• Passeio <strong>exclusivo</strong> (só seu grupo) ou <strong>compartilhado</strong></p>
+                    <p class="text-gray-700 mt-1">• Churrasqueira disponível no passeio privativo</p>
+                    <p class="text-gray-700 mt-1">• Saída flexível: da Marina do Farol ou buscamos você na sua pousada/rancho</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PONTOS DE VISITAÇÃO - EXPANDIDO -->
+        <section id="pontos" class="py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-display text-4xl md:text-5xl text-ocean text-center mb-4">Pontos Turísticos Visitados</h2>
+                <div class="w-20 h-1 bg-coral mx-auto mb-12 rounded-full"></div>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Visitamos os melhores pontos do Lago de Furnas. Nos passeios acima de 4 horas ainda incluímos: Cachoeirinha do Canto da Ilha, Cervejaria e Restaurante Canto da Ilha e Cachoeira do Sabiá.</p>
+
+                <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl">
+                        <div class="text-5xl mb-4">💎</div>
+                        <h3 class="font-bold text-ocean text-xl">Lagoa Azul</h3>
+                        <p class="text-gray-500">Águas cristalinas com tons de azul e verde esmeralda impressionantes</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl">
+                        <div class="text-5xl mb-4">🏔️</div>
+                        <h3 class="font-bold text-ocean text-xl">Cânions de Furnas</h3>
+                        <p class="text-gray-500">Paredões rochosos imponentes com mais de 20 metros de altura</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl">
+                        <div class="text-5xl mb-4">🦜</div>
+                        <h3 class="font-bold text-ocean text-xl">Vale dos Tucanos</h3>
+                        <p class="text-gray-500">Cenário paradisíaco com fauna e flora exuberantes</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl">
+                        <div class="text-5xl mb-4">💧</div>
+                        <h3 class="font-bold text-ocean text-xl">Cachoeira da Gruta</h3>
+                        <p class="text-gray-500">Queda d'água escondida dentro de uma formação rochosa</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl">
+                        <div class="text-5xl mb-4">🌊</div>
+                        <h3 class="font-bold text-ocean text-xl">Cascatinha</h3>
+                        <p class="text-gray-500">Cachoeira pequena e charmosa no meio do lago</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl">
+                        <div class="text-5xl mb-4">🍹</div>
+                        <h3 class="font-bold text-ocean text-xl">Bar Flutuante</h3>
+                        <p class="text-gray-500">Pausa deliciosa para petiscos e drinks no meio do lago</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl">
+                        <div class="text-5xl mb-4">🏊</div>
+                        <h3 class="font-bold text-ocean text-xl">Paradas para Banho</h3>
+                        <p class="text-gray-500">Duas paradas incríveis para mergulho e diversão</p>
+                    </div>
+                    <!-- Novos pontos -->
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl border-2 border-coral">
+                        <div class="text-5xl mb-4">🌴</div>
+                        <h3 class="font-bold text-ocean text-xl">Cachoeirinha do Canto da Ilha</h3>
+                        <p class="text-gray-500 text-xs bg-coral text-white inline-block px-3 py-1 rounded-3xl">+4 horas</p>
+                        <p class="text-gray-500">Ponto extra exclusivo para passeios mais longos</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl border-2 border-coral">
+                        <div class="text-5xl mb-4">🍺</div>
+                        <h3 class="font-bold text-ocean text-xl">Cervejaria e Restaurante Canto da Ilha</h3>
+                        <p class="text-gray-500 text-xs bg-coral text-white inline-block px-3 py-1 rounded-3xl">+4 horas</p>
+                        <p class="text-gray-500">Parada gastronômica imperdível</p>
+                    </div>
+                    <div class="card-highlight bg-white rounded-3xl p-6 shadow-xl border-2 border-coral">
+                        <div class="text-5xl mb-4">💦</div>
+                        <h3 class="font-bold text-ocean text-xl">Cachoeira do Sabiá</h3>
+                        <p class="text-gray-500 text-xs bg-coral text-white inline-block px-3 py-1 rounded-3xl">+4 horas</p>
+                        <p class="text-gray-500">Mais uma cachoeira de tirar o fôlego</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TARIFAS E INFORMAÇÕES - NOVA SEÇÃO PARA DEIXAR MAIOR -->
+        <section class="py-16 px-4 bg-gradient-to-b from-white to-amber-50">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-4xl text-ocean">Tarifas e Informações</h2>
+                    <div class="w-16 h-1 bg-coral mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-3xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-semibold text-ocean mb-6">Valores do Passeio</h3>
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-center border-b pb-6">
+                                <div>
+                                    <p class="font-medium">Duração: 4 horas</p>
+                                    <p class="text-sm text-gray-500">Passeio padrão</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-3xl font-bold text-coral">Consulte</p>
+                                    <p class="text-xs text-gray-400">o proprietário</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-6">
+                                <div>
+                                    <p class="font-medium">Passeio acima de 4 horas</p>
+                                    <p class="text-sm text-gray-500">Inclui pontos extras</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-3xl font-bold text-coral">A combinar</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">O valor depende da quantidade de pessoas, data escolhida e duração do passeio.</p>
+                                <p class="font-medium text-ocean mt-4">Entre em contato para orçamento personalizado!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-semibold text-ocean mb-6">Observações Importantes</h3>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex gap-3"><span class="text-coral font-bold">•</span> Passeio sujeito a condições climáticas e nível do lago</li>
+                            <li class="flex gap-3"><span class="text-coral font-bold">•</span> Saída da Pousada Marina do Farol ou buscamos você na sua pousada/rancho</li>
+                            <li class="flex gap-3"><span class="text-coral font-bold">•</span> Lancha muito confortável e segura, com piloto experiente</li>
+                            <li class="flex gap-3"><span class="text-coral font-bold">•</span> Recomendamos protetor solar, roupa de banho e toalha</li>
+                            <li class="flex gap-3"><span class="text-coral font-bold">•</span> Crianças bem-vindas! Família é nosso foco</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- CONTATO -->
         <section id="contato" class="py-20 px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="font-display text-3xl md:text-4xl text-ocean text-center mb-4">Entre em Contato</h2>
-                <div class="w-16 h-1 bg-coral mx-auto mb-12 rounded-full"></div>
+                <h2 class="font-display text-4xl md:text-5xl text-ocean text-center mb-4">Entre em Contato</h2>
+                <div class="w-20 h-1 bg-coral mx-auto mb-12 rounded-full"></div>
 
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- Informações -->
-                    <div class="space-y-6">
+                    <div class="space-y-8">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center shrink-0">
-                                <i data-lucide="phone" class="text-green-600" style="width:22px;height:22px"></i>
+                            <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center shrink-0">
+                                <i data-lucide="phone" class="text-green-600" style="width:26px;height:26px"></i>
                             </div>
                             <div>
-                                <p class="font-semibold text-ocean">WhatsApp</p>
-                                <a href="https://wa.me/5535992112594" target="_blank" class="text-surf hover:underline">(35) 99211-2594</a>
+                                <p class="font-semibold text-ocean text-xl">WhatsApp</p>
+                                <a href="https://wa.me/5535992112594" target="_blank" class="text-3xl text-surf hover:underline">(35) 99211-2594</a>
+                                <p class="text-sm text-gray-500">Resposta rápida • 7h às 22h</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center shrink-0">
-                                <i data-lucide="map-pin" class="text-blue-600" style="width:22px;height:22px"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="text-blue-600" style="width:26px;height:26px"></i>
                             </div>
                             <div>
-                                <p class="font-semibold text-ocean">Localização</p>
-                                <p class="text-gray-500">Ponte do Turvo • Furnas Aventura • Capitólio - MG</p>
+                                <p class="font-semibold text-ocean text-xl">Localização</p>
+                                <p class="text-gray-600">Ponte do Turvo • Furnas Aventura • Capitólio - MG</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center shrink-0">
-                                <i data-lucide="clock" class="text-amber-600" style="width:22px;height:22px"></i>
+                            <div class="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center shrink-0">
+                                <i data-lucide="clock" class="text-amber-600" style="width:26px;height:26px"></i>
                             </div>
                             <div>
-                                <p class="font-semibold text-ocean">Funcionamento</p>
-                                <p class="text-gray-500">Todos os dias · 7h às 17h</p>
-                                <p class="text-gray-400 text-sm">Sujeito a condições climáticas</p>
+                                <p class="font-semibold text-ocean text-xl">Horário de Funcionamento</p>
+                                <p class="text-gray-600">Todos os dias • 7h às 17h</p>
+                                <p class="text-xs text-gray-400">Sujeito às condições do lago</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Formulário -->
-                    <form id="contact-form" class="bg-sky-50 rounded-2xl p-6 space-y-4">
-                        <h3 class="font-semibold text-ocean">Envie uma mensagem</h3>
+                    <form id="contact-form" class="bg-sky-50 rounded-3xl p-8 space-y-6">
+                        <h3 class="font-semibold text-ocean text-2xl">Envie uma mensagem</h3>
                         <div>
-                            <label for="contact-name" class="block text-sm font-medium text-gray-600 mb-1">Nome</label>
+                            <label for="contact-name" class="block text-sm font-medium text-gray-600 mb-1">Seu nome completo</label>
                             <input type="text" id="contact-name" required
-                                   class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-surf focus:border-transparent outline-none bg-white">
+                                   class="w-full border border-gray-200 rounded-2xl px-5 py-4 text-base focus:ring-2 focus:ring-surf focus:border-transparent outline-none bg-white">
                         </div>
                         <div>
-                            <label for="contact-msg" class="block text-sm font-medium text-gray-600 mb-1">Mensagem</label>
-                            <textarea id="contact-msg" rows="3" required
-                                      class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-surf focus:border-transparent outline-none resize-none bg-white"
-                                      placeholder="Quantas pessoas? Prefere privativo? Data desejada?"></textarea>
+                            <label for="contact-msg" class="block text-sm font-medium text-gray-600 mb-1">O que você gostaria de saber?</label>
+                            <textarea id="contact-msg" rows="4" required
+                                      class="w-full border border-gray-200 rounded-2xl px-5 py-4 text-base focus:ring-2 focus:ring-surf focus:border-transparent outline-none resize-none bg-white"
+                                      placeholder="Quantas pessoas? Data desejada? Prefere exclusivo ou compartilhado? Alguma dúvida?"></textarea>
                         </div>
                         <button type="submit"
-                                class="w-full bg-coral hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition flex items-center justify-center gap-2">
-                            <i data-lucide="send" style="width:16px;height:16px"></i>
+                                class="w-full bg-coral hover:bg-orange-600 text-white font-semibold py-5 rounded-3xl transition flex items-center justify-center gap-3 text-lg">
+                            <i data-lucide="send" style="width:22px;height:22px"></i>
                             Enviar via WhatsApp
                         </button>
                     </form>
                 </div>
 
                 <!-- Mapa -->
-                <div class="mt-12 rounded-2xl overflow-hidden shadow-lg border border-gray-200">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3733.353976535652!2d-46.216777724753555!3d-20.65517308090227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1spt-BR!2sbr!4v1775054251774!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-                            
+                <div class="mt-16 rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3733.353976535652!2d-46.216777724753555!3d-20.65517308090227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1spt-BR!2sbr!4v1775054251774!5m2!1spt-BR!2sbr" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
 
         <!-- FOOTER -->
-        <footer class="bg-deep text-white/70 py-10 px-4">
-            <div class="max-w-5xl mx-auto text-center">
-                <p class="text-2xl mb-2">🚤</p>
-                <p class="text-white font-bold text-lg">Serginho Passeios</p>
-                <p class="text-sm mt-1">Passeio de Lancha • Capitólio - MG</p>
-                <div class="mt-6 flex justify-center gap-6 text-sm">
+        <footer class="bg-deep text-white/70 py-12 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <p class="text-4xl mb-3">🚤</p>
+                <p class="text-white font-bold text-3xl">Serginho Passeios</p>
+                <p class="text-xl mt-1">O melhor passeio de lancha de Capitólio - MG</p>
+                <div class="mt-10 flex justify-center gap-8 text-base">
                     <a href="#inicio" class="hover:text-surf">Início</a>
+                    <a href="#galeria" class="hover:text-surf">Galeria</a>
                     <a href="#passeio" class="hover:text-surf">O Passeio</a>
                     <a href="#pontos" class="hover:text-surf">Pontos</a>
-                    <a href="#galeria" class="hover:text-surf">Galeria</a>
                     <a href="#contato" class="hover:text-surf">Contato</a>
                 </div>
-                <p class="mt-8 text-xs text-white/40">© 2026 Serginho Passeios • Todos os direitos reservados</p>
+                <p class="mt-12 text-xs text-white/40">© 2026 Serginho Passeios • Todos os direitos reservados • Capitólio, Minas Gerais</p>
             </div>
         </footer>
 
         <!-- WHATSAPP FLOAT -->
-        <a href="https://wa.me/5535992112594?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20passeio%20de%20lancha"
+        <a href="https://wa.me/5535992112594?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20passeio%20de%20lancha%20em%20Capit%C3%B3lio"
            target="_blank"
            class="whatsapp-float">
             <svg viewBox="0 0 32 32" width="32" height="32" fill="white">
@@ -472,7 +638,7 @@
             const t = document.getElementById('toast');
             t.textContent = msg;
             t.classList.add('show');
-            setTimeout(() => t.classList.remove('show'), 3000);
+            setTimeout(() => t.classList.remove('show'), 4000);
         }
 
         document.getElementById('contact-form').addEventListener('submit', (e) => {
@@ -486,10 +652,10 @@
             window.open(`https://wa.me/5535992112594?text=${text}`, '_blank');
 
             document.getElementById('contact-form').reset();
-            showToast('✅ Redirecionando para o WhatsApp...');
+            showToast('✅ Redirecionando para o WhatsApp... Obrigado!');
         });
 
-        console.log('%c✅ Site Serginho Passeios carregado com sucesso! Imagens e vídeo inseridos conforme solicitado.', 'color:#0EA5E9; font-weight:bold');
+        console.log('%c✅ Site Serginho Passeios atualizado e expandido com sucesso! Galeria no começo, mais conteúdo, mais bonito e completo conforme pedido.', 'color:#0EA5E9; font-weight:bold; font-size:13px');
     </script>
 </body>
 </html>
